@@ -53,7 +53,7 @@ html, body, #map {
     <body>
 
 <div id="titlebar">
-    KODAGU TOPOGRAPHICAL WETNESS INDEX
+    KODAGU - TOPOGRAPHICAL WETNESS INDEX
 </div>
 
 <div id="map">
@@ -344,9 +344,9 @@ html, body, #map {
         bounds_group.addLayer(layer_idw_twi_3);
         map.addLayer(layer_idw_twi_3);
         var overlaysTree = [
-            {label: "idw_twi", layer: layer_idw_twi_3},
-            {label: '<img src="legend/Kodagu_bound_2.png" /> Kodagu_bound', layer: layer_Kodagu_bound_2},
-            {label: '<img src="legend/MEGADATA_K_1.png" /> MEGADATA_K', layer: layer_MEGADATA_K_1},
+            {label: '<img src="legend/Kodagu_bound_2.png" /> Kodagu', layer: layer_Kodagu_bound_2},
+			 {label: "TWI", layer: layer_idw_twi_3},
+            {label: '<img src="legend/MEGADATA_K_1.png" /> DATA', layer: layer_MEGADATA_K_1},
             {label: "OSM Standard", layer: layer_OSMStandard_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
